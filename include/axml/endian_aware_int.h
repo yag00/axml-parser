@@ -21,7 +21,7 @@ public:
             return value;
         T val2 = value;
         char* p = (char*) &val2;
-        for (int i = 0; i < sizeof(T) / 2; i++)
+        for (size_t i = 0; i < sizeof(T) / 2; i++)
             p[sizeof(T) - 1 - i] = p[i];
         return val2;
     }

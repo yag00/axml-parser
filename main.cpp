@@ -29,7 +29,7 @@ int main(int argc, const char* argv[]) {
                 printf(" ATTRIBUTE ns=%s name=%s ", parser.getElementAttributeNs(i).c_str(),
                        parser.getElementAttributeName(i).c_str());
                 if (typedValue.isInteger()) {
-                    printf("typedValue=%i\n", typedValue.data);
+                    printf("typedValue=%i\n", (int)typedValue.data);
                 } else {
                     printf("rawValue=%s\n", parser.getElementAttributeRawValue(i).c_str());
                 }
